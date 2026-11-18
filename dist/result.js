@@ -7,11 +7,11 @@ const printButton = document.querySelector('#print-result');
 
 const subjectSets = {
   al: [
-    ['PHYSICS', 'A'],
-    ['CHEMISTRY', 'A'],
-    ['BIOLOGY', 'A'],
-    ['COMMON GENERAL TEST', '075'],
-    ['GENERAL ENGLISH', 'A']
+    ['CAT PHYSICS', 'A'],
+    ['CAT CHEMISTRY', 'A'],
+    ['CAT BIOLOGY', 'A'],
+    ['COMMON CAT TEST', '075'],
+    ['GENERAL MEOW', 'A']
   ],
   ol: [
     ['BUDDHISM', 'A'],
