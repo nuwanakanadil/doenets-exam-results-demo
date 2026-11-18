@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Synthetic examination result preview for the local UI demonstration.">
+  <title>Examination Result | Department of Examinations - Sri Lanka</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="banner" aria-label="Department of Examinations, Sri Lanka"></div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span>Menu</span><span aria-hidden="true">☰</span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="examresults.html">School Exam Results</a>
+        <a href="#">Exam Calendar</a>
+        <a href="#">Certificates / Verification of Results</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <div class="nav-tools">
+        <label class="site-search"><span class="search-icon" aria-hidden="true"></span><span class="sr-only">Search the site</span><input type="search" placeholder="Search"></label>
+        <div class="languages" aria-label="Language selector"><button type="button" lang="si">සිංහල</button><button type="button" lang="ta">தமிழ்</button><button class="selected" type="button">English</button></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="result-main">
+    <section class="result-card" aria-labelledby="result-heading">
+      <div class="result-card-body">
+        <h1 id="result-heading"><span id="result-exam">G.C.E. (A/L) EXAMINATION</span> - <span id="result-year">2025</span></h1>
+
+        <div class="result-sheet">
+          <section class="candidate-information" aria-label="Candidate information">
+            <dl>
+              <div><dt>Examination</dt><dd id="info-exam">G.C.E. (A/L) EXAMINATION</dd></div>
+              <div><dt>Year</dt><dd id="info-year">2026</dd></div>
+              <div><dt>Name</dt><dd>Thambaya</dd></div>
+              <div><dt>Index Number</dt><dd id="info-index">0000003</dd></div>
+              <div><dt>NIC</dt><dd>XXXXXXXXXXXX</dd></div>
+              <div class="al-only"><dt>District Rank</dt><dd>001</dd></div>
+              <div class="al-only"><dt>Island Rank</dt><dd>001</dd></div>
+              <div class="al-only"><dt>Z-Score</dt><dd>2.0000</dd></div>
+              <div class="al-only"><dt>Subject Stream</dt><dd>CAT SCIENCE</dd></div>
+            </dl>
+          </section>
+
+          <section class="subject-information" aria-label="Subject results">
+            <h2>Subject</h2>
+            <ul id="subject-list">
+              <li><span><i aria-hidden="true">›</i> CAT PHYSICS</span><strong>A</strong></li>
+              <li><span><i aria-hidden="true">›</i> CAT CHEMISTRY</span><strong>A</strong></li>
+              <li><span><i aria-hidden="true">›</i> CATLOGY</span><strong>A</strong></li>
+              <li><span><i aria-hidden="true">›</i> COMMON CAT TEST</span><strong>075</strong></li>
+              <li><span><i aria-hidden="true">›</i> GENERAL MEOW</span><strong>A</strong></li>
+            </ul>
+          </section>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="result-actions">
+      <button id="print-result" type="button">Print</button>
+      <a href="examresults.html">Other Examination Results</a>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-crest"><img src="assets/SL-Logo.png" alt="Sri Lanka Department of Examinations crest"></div>
+        <section class="footer-contact"><h2>Contact Us</h2><ul><li><span>●</span><span>Department of Examinations Sri Lanka, Pelawatta,<br>Battaramulla, Sri Lanka.</span></li><li><span>✉</span><span>E-Mail : exams@doenets.lk</span></li><li><span>☎</span><span>Hotline : 1911</span></li><li><span>●</span><span>Telephone Number : +94 11 2786200, +94 11 2784203-4</span></li></ul></section>
+        <nav class="footer-links" aria-label="Quick links"><h2>Quick Links</h2><a href="examresults.html">School Exam Results</a><a href="#">Exam Calendar</a><a href="index.html#services-heading">Services</a></nav>
+        <nav class="footer-links" aria-label="More quick links"><h2>Quick Links</h2><a href="#">Downloads</a><a href="#">Gallery</a><a href="#contact">Contact Us</a></nav>
+      </div>
+      <div class="footer-bottom">
+        <div class="developer-credit"><span>Developed By</span><img src="assets/inovaLogo.png" alt="INOVA"></div>
+        <div class="powered-credit"><span>Powered By</span><img src="assets/dialog-logo.png" alt="Dialog"><img class="headstart-logo" src="assets/Headstart Logo.png" alt="headstart"></div>
+        <p>Copyright © 2022 - Department of Examinations, Sri Lanka. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="return-to-top" id="return-to-top" type="button" aria-label="Return to the top" hidden><span aria-hidden="true">⌃</span></button>
+  <script src="result.js"></script>
+</body>
+</html>
